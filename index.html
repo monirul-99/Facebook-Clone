@@ -29,8 +29,68 @@
           <img src="images/search.png" alt="search-icon" />
           <input type="text" placeholder="Search" />
         </div>
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
           <img src="images/profile-pic.png" alt="" />
+        </div>
+      </div>
+
+      <div class="setting-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="" />
+            <div>
+              <p>John Nicholson</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="settings-links">
+            <img class="settings-icon" src="images/setting.png" alt="" />
+            <a href="#"
+              >Setting & Privacy
+              <img src="images/arrow.png" alt="" width="10px" />
+            </a>
+          </div>
+
+          <div class="settings-links">
+            <img class="settings-icon" src="images/help.png" alt="" />
+            <a href="#"
+              >Help & Support
+              <img src="images/arrow.png" alt="" width="10px" />
+            </a>
+          </div>
+
+          <div class="settings-links">
+            <img class="settings-icon" src="images/display.png" alt="" />
+            <a href="#"
+              >display & Accessibility
+              <img src="images/arrow.png" alt="" width="10px" />
+            </a>
+          </div>
+
+          <div class="settings-links">
+            <img class="settings-icon" src="images/logout.png" alt="" />
+            <a href="#"
+              >Logout
+              <img src="images/arrow.png" alt="" width="10px" />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -66,11 +126,154 @@
       <!-- main content-->
       <div class="main-content">
         <div class="story-gallery">
-          <div class="story">
+          <div class="story story1">
             <img src="images/upload.png" alt="" />
             <p>Post Story</p>
           </div>
+          <div class="story story2">
+            <img src="images/member-4.png" alt="" />
+            <p>Alison</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member-7.png" alt="" />
+            <p>Jackson</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member-8.png" alt="" />
+            <p>Samanto</p>
+          </div>
+          <div class="story story5">
+            <img src="images/member-3.png" alt="" />
+            <p>Riah</p>
+          </div>
         </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="" />
+            <div>
+              <p>John Nicholson</p>
+              <small>Public <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, John?"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"
+                ><img src="images/live-video.png" alt="" />Live Video</a
+              >
+              <a href="#"><img src="images/photo.png" alt="" />Photo/Video</a>
+              <a href="#"
+                ><img src="images/feeling.png" alt="" />Feeling/Activity</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 20022, 1:09PM</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            HTML And CSS master course we are going to build
+            <span>5 real world website</span> design that you can use for your
+            college project or add these project link in your Job resume.
+            <a href="#">#HTML</a>
+            <a href="#">#CSS</a>
+          </p>
+
+          <img class="post-img" src="images/feed-image-1.png" alt="" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" alt="" /> 270</div>
+              <div><img src="images/comments.png" alt="" /> 234</div>
+              <div><img src="images/share.png" alt="" /> 57</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>May 12 2000, 11:23PM</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            HTML And CSS master course we are going to build
+            <span>5 real world website</span> design that you can use for your
+            college project or add these project link in your Job resume.
+            <a href="#">#HTML</a>
+            <a href="#">#CSS</a>
+          </p>
+
+          <img class="post-img" src="images/feed-image-2.png" alt="" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" alt="" /> 70</div>
+              <div><img src="images/comments.png" alt="" /> 24</div>
+              <div><img src="images/share.png" alt="" /> 7</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>Jun 2 2000, 10:09PM</span>
+              </div>
+            </div>
+            <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            HTML And CSS master course we are going to build
+            <span>5 real world website</span> design that you can use for your
+            college project or add these project link in your Job resume.
+            <a href="#">#HTML</a>
+            <a href="#">#CSS</a>
+          </p>
+
+          <img class="post-img" src="images/feed-image-3.png" alt="" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" alt="" /> 20</div>
+              <div><img src="images/comments.png" alt="" /> 24</div>
+              <div><img src="images/share.png" alt="" /> 5</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" alt="" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <button class="load-more-button" type="button">Load More</button>
       </div>
       <!-- right sidebar -->
       <div class="right-sidebar">
@@ -144,5 +347,9 @@
         </div>
       </div>
     </div>
+    <div class="footer">
+      <p>© Copyright 2021 - Monirul Islam</p>
+    </div>
+    <script src="setting.js"></script>
   </body>
 </html>
